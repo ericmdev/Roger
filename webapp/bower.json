@@ -1,0 +1,26 @@
+{
+  "name": "RogerThat",
+  "description": "Command a fleet of Linux containers.",
+  "main": "gulpfile.coffee",
+  "authors": [
+    "Eric Mugerwa"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "Containers",
+    "Docker",
+    "Linux"
+  ],
+  "homepage": "https://github.com/ericmdev/RogerThat",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+  }
+}
