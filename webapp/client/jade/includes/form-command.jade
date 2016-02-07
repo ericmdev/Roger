@@ -1,0 +1,8 @@
+.container
+    form.form-command(action='/api/command' method='post' autocomplete='off' ajax='true')
+        h2.form-command-heading Enter command
+        div.textarea
+            //- label.textarea
+            textarea.form-command-textarea(name='command' placeholder='echo "Hello, PHP!"')
+        div.submit
+            button.btn.btn-sm.btn-primary(type='submit') Send
