@@ -1,0 +1,41 @@
+{
+    "name": "rogerthat/rogerthat",
+    "description": "Command a fleet of interactive Linux containers.",
+    "type": "application",
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "Eric Mugerwa",
+            "email":  "dev@ericmugerwa.com",
+            "homepage":  "http://www.ericmugerwa.com",
+            "role": "Developer"
+        }
+    ],
+    "license": "MIT",
+    "keywords": [
+        "rogerthat"
+    ],
+    "homepage": "https://github.com/ericmdev/RogerThat",
+    "autoload": {
+        "psr-4": {
+            "RogerThat\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "RogerThat\\Test\\": "test"
+        }
+    },
+    "require": {
+        "php": ">=5.5",
+        "symfony/yaml": "^3.0"
+    },
+    "require-dev": {
+        "firephp/firephp-core": "^0.4.0",
+        "pimple/pimple": "^3.0"
+    },
+    "suggest": {
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
