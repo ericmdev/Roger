@@ -1,5 +1,7 @@
 ## RogerThat
 
+<img src="./doc/user-interface.png" alt="User Interface" style="text-align:center; height: 273px">
+
 A fleet of Linux containers responds with "Hello, World" in the programming language of the user's choice.
 
 The key is in knowing how to communicate with a container.
@@ -11,8 +13,6 @@ For example, if you wanted to talk to a PHP container, you would enter:
 To talk to a Scala container, you would enter:
     
     println("Hello, Scala!")
-
-<img src="./doc/user-interface.png" alt="User Interface" style="text-align:center; height: 273px">
 
 ### Usage
 
