@@ -12,7 +12,7 @@ To talk to a Scala container, you would enter:
     
     println("Hello, Scala!")
 
-<img src="./doc/user-interface.png" alt="User Interface" height="400px">
+<img src="./doc/user-interface.png" alt="User Interface" style="text-align:center; height: 273px">
 
 ### Usage
 
