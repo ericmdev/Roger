@@ -1,0 +1,40 @@
+{
+  "dns_prefetch": [
+    "//ajax.googleapis.com",
+    "//s3.amazonaws.com"
+  ],
+  "stylesheets": {
+    "external": [
+      "http://fonts.googleapis.com/css?family=Wire+One",
+      "https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css",
+      "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/css/bootstrap.min.css",
+      "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css"
+    ]
+  },
+  "javascript": {
+    "external": [
+      "https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"
+    ]
+  },
+  "meta": {
+    "title": "RogerThat - Command a fleet of Linux containers.", 
+    "description": "RogerThat - Developer application.",
+    "author": "Eric Mugerwa (EricMugerwa.com)",
+    "twitter": {
+      "twitter:card": "summary_large_image",
+      "twitter:creator": "@ericmdev",
+      "twitter:image:src": "/img/logo-og.png"
+    },
+    "og": {
+      "og:title": "RogerThat",
+      "og:site_name": "RogerThat",
+      "og:url": "http://rogerthat.ericmugerwa.com",
+      "og:description": "RogerThat - Developer application.",
+      "og:image": "/img/logo-og.png"
+    }
+  },
+  "content": {
+    "title": "RogerThat",
+    "subtitle":  "Command a fleet of Linux containers."
+  }
+}
