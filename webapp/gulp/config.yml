@@ -1,0 +1,84 @@
+# Configure gulp-task-loader.
+root: './'
+tasks: './gulp/tasks'
+ext:
+  - '.coffee'
+
+# Webserver.
+webserver:
+  src: './web'
+  opts:
+    livereload: false
+    directoryListing: false
+    open: false
+    host: 'localhost'
+    port: 8000
+    https: false
+
+# Jasmine.
+jasmine:
+  src: 
+    - 'client/js/spec/**/*.spec.js'
+
+# Jade.
+jade:
+  data: 'client/jade/data/index.json'
+  tpl: 'client/jade/views/index.jade'
+  dest: 'web'
+
+# Sass.
+sass:
+  src: 'client/sass/**/style.scss'
+  dest: 'web/css'
+  opts:
+    style: 'expanded'
+
+# Autoprefixer.
+autoprefixer:
+  opts:
+    - 'last 2 version'
+    - 'safari 5'
+    - 'ie 8'
+    - 'ie 9'
+    - 'opera 12.1'
+
+# Webpack.
+webpack:
+  src: 'client/js'
+  dest: 'web/js'
+  config: 'webpack.config.js'
+
+# Images.
+images:
+  src: 'client/img'
+  dest: 'web/img'
+
+# Humans.
+humans:
+  src: 
+    - 'web/index.html'
+  dest: 'web'
+  opts:
+    - team: 'Personal (@ericmdev on Twitter)'
+    - thanks: 
+      - 'Node (@nodejs on Twitter)'
+      - 'Gulp (@gulpjs on Twitter)'
+    - site:
+      - 'Standards: HTML5, CSS3'
+      - 'Components: jQuery, Normalize.css'
+      - 'Software: Sublime Text'
+    - note: 'Built with love'
+
+# Robots.
+robots:
+  src: 
+    - 'web/index.html'
+  dest: 'web'
+  opts:
+    - useragent: '*'
+    - allow: 
+      - 'img/'
+      - 'css/'
+      - 'js/'
+    - disallow:
+      - 'cgi-bin/'
