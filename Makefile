@@ -6,7 +6,7 @@ build:
 # Install application dependencies and build static assets.
 .PHONY: app
 app:
-	cd ./webapp/ && composer install && npm install && gulp
+	cd ./webapp/ && composer update && npm update && gulp
 
 # Stop and remove all containers.
 .PHONY: clean
