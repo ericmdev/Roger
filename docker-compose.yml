@@ -1,0 +1,19 @@
+www:
+    image: ericmdev/srv-www
+    volumes:
+        - ./webapp:/srv/www
+    tty: true
+
+php:
+    image: ericmdev/php7-fpm
+    volumes_from:
+        - www
+
+nginx:
+    image: ericmdev/nginx-php-proxy
+    links:
+        - php
+    volumes_from:
+        - www
+    ports:
+        - 8080:80
