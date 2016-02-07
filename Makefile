@@ -3,6 +3,11 @@
 build:
 	docker-compose up -d
 
+# Install application dependencies and build static assets.
+.PHONY: app
+app:
+	cd ./webapp/ && composer install && npm install && gulp
+
 # Stop and remove all containers.
 .PHONY: clean
 clean:
