@@ -1,0 +1,35 @@
+head
+  meta(charset='utf-8')
+  base(href='/')
+  //- Make a DNS handshake
+  for _href in dns_prefetch
+    link(rel='dns-prefetch' href='#{_href}')
+
+  //- Make sure the latest version of IE is used
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  //- Sitemap 
+  link(rel='sitemap' type='application/xml' title='Sitemap' href='/sitemap.xml')
+  //- Title
+  title #{meta.title}
+  //- Content Information
+  meta(name='description' content='#{meta.description}') 
+  meta(name='author' content='#{meta.author}') 
+
+  meta(name='viewport' content='width=device-width, initial-scale=1.0') 
+  link(rel='shortcut icon' type='image/x-icon' href='/favicon.ico')
+  link(rel='apple-touch-icon' href='/apple-touch-icon.png') 
+
+  for _href in stylesheets.external
+    link(rel='stylesheet' href='#{_href}')
+
+  // build:css
+  link(rel='stylesheet' href='/css/style.css')
+  // endbuild
+
+  //- Twitter 
+  for _name, _content in meta.twitter
+    meta(name='#{_name}' content='#{_content}')
+
+  //- Facebook Open Graph
+  for _name, _content in meta.og
+    meta(name='#{_name}' content='#{_content}')
