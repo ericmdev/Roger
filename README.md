@@ -12,6 +12,8 @@ To talk to a Scala container, you would enter:
     
     println("Hello, Scala!")
 
+<img src="./doc/user-interface.png" alt="User Interface" height="300px">
+
 ### Usage
 
 Once you successfully communicate with a container, you can do some work in the environment via the CLI or user interface.
